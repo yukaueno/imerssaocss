@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('https://github.com/yukaueno/imerssaocss/blob/master/img/kusudama.jpg');
+    background-image: url('img/kusudama.jpg');
     /*background-color: darkgoldenrod;*/
     background-size: auto 100vh;
     font-family: 'Roboto Mono', monospace;
