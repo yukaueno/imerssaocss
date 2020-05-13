@@ -7,9 +7,10 @@
 }
 
 body {
-    background-image: url('img/kusudama.jpg');
+    background-image: url('file:///home/fyukaueno/Documents/imersao-css/img/kusudama.jpg');
+    /*background-color: darkgoldenrod;*/
     background-size: auto 100vh;
-    font-family: Arial;
+    font-family: 'Roboto Mono', monospace;
     height: 100vh;
     font-size: 12px;
 }
@@ -73,13 +74,61 @@ a:hover {
     
 .site-title {
     font-size: 3em;
+    font-family: 'Pangolin', cursive;
 }
 
 .site-subtitle {
     font-style: italic;
+    font-family: 'Special Elite', cursive;
+    line-height: 1.5em;
+}
+
+.portfolio {
+    padding: 2em;
+    color: wheat;
+    height: 100vh;
+}
+
+.portfolio h2 {
+    color: thistle;
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 1em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }    
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3,240px);
+        align-content: center;
+        height: calc(100vh - 8em -48px);
+    }    
+}
+
+.portfolio figure {
+    text-align: center;
 }
 
 .img-portfolio {
     height: 180px;
-    width: 180px
+    width: 240px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+@media (min-width: 880px;) {
+    .img-portfolio {
+        height: auto;
+        width: 100%;
+    }   
 }
