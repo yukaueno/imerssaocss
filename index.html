@@ -9,35 +9,98 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Pangolin&family=Roboto+Mono:wght@300;400&family=Special+Elite&display=swap"
 		rel="stylesheet">
+		<script src="https://kit.fontawesome.com/816858f8a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<header>
 		<nav class="menu">
-			<ul>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Projetos</a></li>
-				<li><a href="#">Contato</a></li>
+			<ul class="container">
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#portfolio">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
-		<div>
+		<div class="titulo">
 			<h1 class="site-title">Fernanda Yuka Ueno</h1>
 			<h2 class="site-subtitle">Site pessoal</h2>
-			<h2 class="site-subtitle">Mestranda</h2>
 		</div>
 	</header>
-	<section class="portfolio">
+	<section class="sobre container">
+		<head>Sobre</head>
+		<figure class="avatar">
+			<img src="./img/foto.jpg" alt="Fernanda Yuka Ueno">
+		</figure>
+
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		Iste dignissimos natus maiores odio facere nostrum delectus praesentium placeat, 
+		nemo porro ad esse temporibus ipsum magni quia iure harum. Quasi, inventore?
+		</p>
+
+		<p>
+			Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+		</p>
+	</section>
+	<section class="portfolio container" id="portfolio">
 		<h2>Projetos</h2>
 
 		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/gato.jpg" alt="Mestrado">
-				<figcaption>Mestrado</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/coelho.jpg" alt=">Origami">
-				<figcaption>Origami</figcaption>
-			</figure>
+
+			<div class="flip-card">
+				<div class="card">
+				<figure class="card-front">
+					<img class="img-portfolio" src="./img/gato.jpg" alt="Mestrado">
+					<!--<figcaption>Mestrado</figcaption>-->
+				</figure>
+				<div class="card-back">
+					Mestrado
+				</div>
+				</div>
+			</div>
+			
+			<div class="flip-card">
+				<div class="card">
+					<figure>
+						<img class="img-portfolio" src="./img/coelho.jpg" alt=">Origami">
+						<!--<figcaption>Mestrado</figcaption>-->
+					</figure>
+				<div class="card-back">
+					Origami
+				</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="card">
+					<figure>
+						<img class="img-portfolio" src="./img/kusudama.jpg" alt=">Coisas">
+						<!--<figcaption>Mestrado</figcaption>-->
+					</figure>
+				<div class="card-back">
+					Coisas
+				</div>
+				</div>
+			</div>
+
+			
+
+		</div>
+
+	</section>
+	<section class="contato container" id="contato">
+		<h2>Contatos</h2>
+
+		<div class="grid icons">
+			<a target="_blank" href="https://github.com/yukaueno">
+				<i class="fab fa-github"></i>
+			</a>
+			<a target="_blank" href="https://linkedin.com/in/f-yuka-ueno-bb6451181">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a target="_blank" href="https://www.instagram.com/f.yukaueno/">
+				<i class="fab fa-instagram"></i>
+			</a>
 		</div>
 
 	</section>
